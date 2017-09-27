@@ -41,15 +41,12 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.junit.SauceOnDemandTestWatcher;
 import com.thoughtworks.selenium.SeleniumLogLevels;
 import lcg.selenium.pages.*;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.*;
 import org.junit.rules.TestName;
 import org.junit.rules.TestWatcher;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -61,8 +58,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import java.io.File;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.Timestamp;
@@ -71,7 +66,6 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -183,6 +177,8 @@ public abstract class TestFactory implements SauceOnDemandSessionIdProvider {
         logger.info("=====================================================================");
         test.pass(PASSED);
     }
+
+
 
     /**
      * Read and Setup Parameters Once for every class with @Tests.
@@ -359,6 +355,8 @@ public abstract class TestFactory implements SauceOnDemandSessionIdProvider {
             setSauceLabsApiParameters();
         }
     }
+
+
 
     /**
      * Parser for "sauceLabsSession" command line parameter.
@@ -561,6 +559,8 @@ public abstract class TestFactory implements SauceOnDemandSessionIdProvider {
         if(htmlUnitClient != null) {
             htmlUnitClient.close();
         }
+
+
         driver.quit();
     }
 

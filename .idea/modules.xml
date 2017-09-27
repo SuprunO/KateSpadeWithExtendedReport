@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/KateSpadeWithExtendedReport.iml" filepath="$PROJECT_DIR$/.idea/KateSpadeWithExtendedReport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/speroteck-custom-3240e384f1d5bbf798a5586841600892ee4067da-3240e384f1d5bbf798a5586841600892ee4067da/app-support-test-framework.iml" filepath="$PROJECT_DIR$/speroteck-custom-3240e384f1d5bbf798a5586841600892ee4067da-3240e384f1d5bbf798a5586841600892ee4067da/app-support-test-framework.iml" />
     </modules>
   </component>
 </project>

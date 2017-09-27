@@ -32,7 +32,9 @@
 
 package lcg.selenium.KateSpade;
 
+import lcg.selenium.ScreenShotOnFailure;
 import lcg.selenium.TestFactory;
+import org.junit.Rule;
 import org.junit.Test;
 
 /**
@@ -41,6 +43,10 @@ import org.junit.Test;
  * @author Speroteck QA Team (qa@speroteck.com)
  */
 public class CheckoutAsGuest extends TestFactory {
+
+
+    @Rule
+    public ScreenShotOnFailure screenShotOnFailure = new ScreenShotOnFailure(driver);
 
     /**
      * Test requirement: Guest Visitors have ability to place order
